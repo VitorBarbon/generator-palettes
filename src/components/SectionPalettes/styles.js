@@ -2,15 +2,27 @@ import styled, { css } from 'styled-components';
 
 export const Section = styled.section`
   ${({ theme }) => css`
-    display: grid;
+    margin: 0 auto;
+    width: 320px;
+    display: flex;
+    flex-flow: row wrap;
     align-items: center;
-    grid-template-columns: 1fr;
     gap: 40px;
-    @media ${theme.media.lteBig} {
-      grid-template-columns: 1fr 1fr;
+
+    @media ${theme.media.lteSmall} {
+      width: 500px;
     }
+
+    @media ${theme.media.lteMedium} {
+      width: 740px;
+    }
+
+    @media ${theme.media.lteBig} {
+      width: 1100px;
+    }
+
     @media ${theme.media.lteHuge} {
-      grid-template-columns: 1fr 1fr 1fr;
+      width: 1500px;
     }
   `}
 `;

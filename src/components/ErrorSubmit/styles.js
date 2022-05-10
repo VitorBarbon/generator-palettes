@@ -3,9 +3,9 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   ${({ theme }) => css`
     p {
-      width: 500px;
+      width: 300px;
       text-align: start;
-      font-size: ${theme.font.sizes.xsmall};
+      font-size: 16px;
       margin: 0;
       padding: 0;
       color: ${theme.colors.secondaryColor};

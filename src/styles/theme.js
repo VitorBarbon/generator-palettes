@@ -7,7 +7,7 @@ export const theme = {
   },
   font: {
     sizes: {
-      xsmall: '.8rem',
+      xsmall: '1.2rem',
       small: '1.6rem',
       medium: '2.4rem',
       large: '3.2rem',
@@ -19,7 +19,8 @@ export const theme = {
   },
 
   media: {
-    lteMedium: '(max-width: 768px)',
+    lteSmall: '(min-width: 550px)',
+    lteMedium: '(min-width: 768px)',
     lteHuge: '(min-width: 1600px)',
     lteBig: '(min-width: 1100px)',
   },

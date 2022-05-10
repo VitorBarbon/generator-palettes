@@ -25,6 +25,12 @@ const mediaFont = (theme) => css`
 export const Paragraph = styled.p`
   ${({ theme, size }) => css`
     ${titleSize[size](theme)};
-    /* width: 400px; */
+    margin: 0 auto;
+    margin-top: ${theme.spacings.huge};
+    width: 350px;
+
+    @media ${theme.media.lteSmall} {
+      width: 500px;
+    }
   `}
 `;
