@@ -7,7 +7,19 @@ import { useEffect, useState } from 'react';
 import { Hamburguer } from '../Hamburguer';
 
 export const Header = () => {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 767) {
+        setVisible((v) => false);
+      }
+      if (window.innerWidth > 767) {
+        setVisible((v) => true);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+  });
 
   return (
     <Styled.Container>

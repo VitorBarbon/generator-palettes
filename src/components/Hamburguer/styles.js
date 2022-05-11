@@ -5,7 +5,7 @@ export const IconClose = styled.button`
     position: absolute;
     border: 1px solid transparent;
     top: 40px;
-    right: 80px;
+    right: 20px;
     background: transparent;
 
     div {
@@ -45,7 +45,7 @@ export const IconHamburguer = styled.button`
     position: absolute;
     border: 1px solid transparent;
     top: 40px;
-    right: 80px;
+    right: 20px;
     transition: all 400ms linear;
     background: transparent;
 
