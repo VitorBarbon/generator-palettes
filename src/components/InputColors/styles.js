@@ -17,6 +17,7 @@ export const Container = styled.div`
       width: 300px;
       height: 30px;
       padding: 10px;
+      background-color: ${theme.colors.white};
     }
 
     @media ${theme.media.lteSmall} {

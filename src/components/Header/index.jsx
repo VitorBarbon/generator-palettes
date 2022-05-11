@@ -10,6 +10,15 @@ export const Header = () => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
+    if (window.innerWidth <= 767) {
+      setVisible((v) => false);
+    }
+    if (window.innerWidth > 767) {
+      setVisible((v) => true);
+    }
+  }, []);
+
+  useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 767) {
         setVisible((v) => false);
