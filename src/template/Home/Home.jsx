@@ -12,6 +12,7 @@ import { Palette } from '../../components/Palette';
 import { useState } from 'react';
 import mockPalettes from './mockPalettes';
 import { Color } from '../../components/Color';
+import { Footer } from '../../components/Footer';
 
 const handleId = () => {
   return (Math.random(1) * 100).toFixed(0);
@@ -38,6 +39,7 @@ function Home() {
           </Palette>
         ))}
       </SectionPalettes>
+      <Footer></Footer>
     </MainContainer>
   );
 }

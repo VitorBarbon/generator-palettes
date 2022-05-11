@@ -2,9 +2,10 @@ import styled, { css } from 'styled-components';
 
 export const Section = styled.section`
   ${({ theme }) => css`
-    margin: 0 auto;
-    width: 320px;
     display: grid;
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 100px;
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
