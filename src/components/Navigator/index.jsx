@@ -1,11 +1,11 @@
 import P from 'prop-types';
 import { Link } from 'react-router-dom';
 import { theme } from '../../styles/theme';
-import * as Styled from './styles';
+import { Nav } from './styles';
 
 export const Navigator = () => {
   return (
-    <Styled.Container theme={theme}>
+    <Nav>
       <Link to="/">
         Home
         <span></span>
@@ -18,6 +18,6 @@ export const Navigator = () => {
         How to use
         <span></span>
       </Link>
-    </Styled.Container>
+    </Nav>
   );
 };

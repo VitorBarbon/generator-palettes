@@ -10,5 +10,17 @@ export const Container = styled.div`
       padding: 0;
       color: ${theme.colors.secondaryColor};
     }
+
+    @media ${theme.media.lteSmall} {
+      p {
+        width: 400px;
+      }
+    }
+
+    @media ${theme.media.lteMedium} {
+      p {
+        width: 500px;
+      }
+    }
   `}
 `;

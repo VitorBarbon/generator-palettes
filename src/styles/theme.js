@@ -19,6 +19,7 @@ export const theme = {
   },
 
   media: {
+    // lteMobile: '(max-width: 550px)',
     lteSmall: '(min-width: 550px)',
     lteMedium: '(min-width: 768px)',
     lteHuge: '(min-width: 1600px)',
