@@ -19,6 +19,10 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     background: ${theme.colors.mediumGray};
   }
+  
+  body, html {
+    min-height: 100vw;
+  }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
