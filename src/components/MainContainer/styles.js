@@ -7,5 +7,7 @@ export const Container = styled.main`
   ${({ theme }) => css`
     text-align: center;
     background: ${theme.colors.mediumGray};
+    min-height: 100%;
+    position: relative;
   `}
 `;

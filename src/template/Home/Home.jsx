@@ -23,24 +23,26 @@ function Home() {
   const { palettes } = state;
   console.log(palettes);
   return (
-    <MainContainer>
-      <Header />
-      <TextComponent
-        size={'small'}
-        text="Hey there! What about customize your palettes?"
-      />
-      <FormPalette />
-      <SectionPalettes>
-        {palettes.map((palette) => (
-          <Palette key={palette.id}>
-            {palette.colors.map((color) => (
-              <Color key={color + handleId()} bgColor={color} />
-            ))}
-          </Palette>
-        ))}
-      </SectionPalettes>
+    <>
+      <MainContainer>
+        <Header />
+        <TextComponent
+          size={'small'}
+          text="Hey there! What about customize your palettes?"
+        />
+        <FormPalette />
+        <SectionPalettes>
+          {palettes.map((palette) => (
+            <Palette key={palette.id}>
+              {palette.colors.map((color) => (
+                <Color key={color + handleId()} bgColor={color} />
+              ))}
+            </Palette>
+          ))}
+        </SectionPalettes>
+      </MainContainer>
       <Footer></Footer>
-    </MainContainer>
+    </>
   );
 }
 

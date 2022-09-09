@@ -1,5 +1,4 @@
 import P from 'prop-types';
-import { useEffect } from 'react';
 import { ButtonSubmit } from './styles';
 
 export const Button = ({ text, handleAsyncFunc }) => {
