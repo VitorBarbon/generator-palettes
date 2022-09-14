@@ -20,8 +20,10 @@ export const GlobalStyles = createGlobalStyle`
     background: ${theme.colors.mediumGray};
   }
   
-  body, html {
-    min-height: 100vw;
+    #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
