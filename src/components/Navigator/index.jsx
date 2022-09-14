@@ -10,10 +10,6 @@ export const Navigator = () => {
         Home
         <span></span>
       </Link>
-      <Link to="/about">
-        About
-        <span></span>
-      </Link>
       <Link to="/how-to-use">
         How to use
         <span></span>
